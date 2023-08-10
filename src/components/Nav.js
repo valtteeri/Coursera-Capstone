@@ -1,15 +1,32 @@
+import { Link } from 'react-router-dom';
+import logo from '../images/logo.jpg'
 
-function Header(){
+function Nav(){
     return(
-        <>
-        <ul>
-            <li><a href="#">test1</a></li>
-            <li><a href="#">test2</a></li>
-            <li><a href="#">test3</a></li>
-            <li><a href="#">test4</a></li>
-        </ul>
-        </>
+        <nav className="nav">
+            <img src={logo} alt="logo" />
+            <ul>
+                <li>
+                    <Link to='/'><a href="#">Home</a></Link>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Reservations</a>
+                </li>
+                <li>
+                    <a href="#">Order Online</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
     )
 }
 
-export default Header;
+export default Nav;
